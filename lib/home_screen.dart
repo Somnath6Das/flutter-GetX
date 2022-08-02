@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/routes/default_transitions.dart';
+import 'package:learn_getx/contact/contact_book.dart';
 import 'package:learn_getx/getx_example/Todo_Screen.dart';
 import 'package:learn_getx/getx_example/increment_decrement.dart';
 import 'package:learn_getx/utils_example.dart';
@@ -49,6 +49,16 @@ class HomeScreen extends StatelessWidget {
               color: Colors.orange,
             ),
             title: Text("Example 1"),
+          ),
+          ListTile(
+            onTap: () {
+              Get.to(() => ContractBook());
+            },
+            leading: Icon(
+              Icons.people,
+              color: Colors.orange,
+            ),
+            title: Text("Contract Book"),
           ),
         ],
       ),
